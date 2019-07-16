@@ -1,0 +1,121 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Product",
+		"_postman_id": "9852c884-0914-59d0-f325-ed8b5bc0afcb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "localhost:8000/api/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "anish",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "vikas123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "This endpoint is for login"
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"url": "localhost:8000/api/register",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "anish",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "vikas123",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "conf_password",
+							"value": "vikas123",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Product List",
+			"request": {
+				"url": "localhost:8000/api/product",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a376fcc153b9bc9ee14ba6f62f56153f321c448a",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Rating",
+			"request": {
+				"url": "localhost:8000/api/rating",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token a376fcc153b9bc9ee14ba6f62f56153f321c448a",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "4",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
